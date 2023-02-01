@@ -39,9 +39,9 @@ def browser(request):
 
 #hook for adding environment info to html report
 def pytest_configure(config):
-    config._metadata['Project Name'] = 'Hybrid Framework Practice'
-    config._metadata['Module Name'] = 'Customers'
-    config._metadata['Tester'] = 'Amar'
+    config._metadata['Project Name'] = 'Facebook home page'
+    config._metadata['Module Name'] = 'facebook'
+    config._metadata['Tester'] = 'Piyush'
 
 @pytest.mark.optionalhook
 def pytest_metadata(metadata):

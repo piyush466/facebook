@@ -13,7 +13,7 @@ class Test_FB_login:
         act_title = self.driver.title
         print(self.driver.title)
 
-        if act_title == "Log in to Faceboo12":
+        if act_title == "Log in to Facebook":
             print("Your test is pass")
             assert True
             self.driver.close()
