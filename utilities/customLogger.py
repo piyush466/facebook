@@ -19,7 +19,7 @@ class LogGen():
     # getLogger() method takes the test case name as input
         logger = logging.getLogger(__name__)
     # FileHandler() method takes location and path of log file
-        fileHandler = logging.FileHandler(r'.\\Logs\\autom.log')
+        fileHandler = logging.FileHandler(r'.\\Logs\\autom1.log')
     # Formatter() method takes care of the log file formatting
         formatter = logging.Formatter("%(asctime)s: %(levelname)s: %(message)s")
 
