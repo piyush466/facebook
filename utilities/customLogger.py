@@ -14,6 +14,7 @@ import logging
 
 import logging
 class LogGen():
+
     @staticmethod
     def loggen():
     # getLogger() method takes the test case name as input

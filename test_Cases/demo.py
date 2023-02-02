@@ -1,16 +1,14 @@
-from selenium import webdriver
-
-
-import time
-
-from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
+from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-test = Service(r"C:\Users\Cliffex-Lead\Desktop\piyush\chromedriver.exe")
+service = Service(executable_path=r"C:\Users\Cliffex-Lead\Desktop\piyush\chromedriver.exe")
+driver = webdriver.Chrome(service=service)
+driver.get('https://ultimateqa.com/dummy-automation-websites/')
+print(driver.current_url)
 
-driver = webdriver.Chrome(service=test)
-driver.maximize_window()
+driver.find_element(By.XPATH,"(//span[@class='lwptoc_item_label'])[1]").click()
 
-# driver = webdriver.Chrome(executable_path=r"C:\Users\Cliffex-Lead\Desktop\piyush\chromedriver.exe")
-driver.get("https://dev.mmabetclub.com/login")
+est = driver.current_url
+print("after click button:-"+est)
+
