@@ -10,18 +10,24 @@ def setup(browser):
     # driver = webdriver.Firefox(executable_path=r"C:\Users\Cliffex-Lead\Desktop\chrome123\geckodriver.exe")
     # global driver
     if browser=="chrome":
-        # object = Service(r"C:\Users\Cliffex-Lead\Desktop\piyush\chromedriver.exe")
+
+        # object = Service(r"C://Users//Cliffex-Lead//Desktop//piyush//chromedriver.exe")
         # driver = webdriver.Chrome(service=object)
         driver= webdriver.Chrome(executable_path=r"C:\Users\Cliffex-Lead\Desktop\piyush\chromedriver.exe")
         print("Lauching the chrome browser........")
+        driver.maximize_window()
 
     elif browser=="firefox":
         driver = webdriver.Chrome(executable_path=r"C:\Users\Cliffex-Lead\Desktop\piyush\chromedriver.exe")
         print("Lauching the firefox browser........")
+        driver.maximize_window()
 
     else:
+        # object = Service(r"C://Users//Cliffex-Lead//Desktop//piyush//chromedriver.exe")
+        # driver = webdriver.Chrome(service=object)
         driver = webdriver.Chrome(executable_path=r"C:\Users\Cliffex-Lead\Desktop\piyush\chromedriver.exe")
         print("Lauching the chrome browser........")
+        driver.maximize_window()
 
 
     return driver

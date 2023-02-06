@@ -1,14 +1,17 @@
 class stat:
 
     @staticmethod
-    def piyush():
-        print("heelo piyush")
+    def piyush(name_p):
+        print("heelo piyush",name_p)
 
     @classmethod
-    def newtest(cls):
-        print("hellos ayush")
+    def newtest(cls,name):
+        print("hellos ayush:",name)
 
-var = stat.newtest()
+var = stat.newtest("vinay")
 
-hi = stat.piyush()
+
+#hi = stat.piyush()
+
+oj = stat.piyush('gsdgyudguysed')
 
